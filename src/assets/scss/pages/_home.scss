@@ -2,4 +2,9 @@
 
 main {
   @include flex-centering();
+  flex-direction: row;
+  padding-top: rem(150);
+  padding-bottom: rem(70);
+  width: 100%;
+  gap: rem(30);
 }

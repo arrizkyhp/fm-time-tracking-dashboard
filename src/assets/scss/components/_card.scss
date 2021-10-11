@@ -1,5 +1,135 @@
 @use "../utils" as *;
 
 .card {
-  background-color: salmon;
+  width: 100%;
+  position: relative;
+  max-width: rem(250);
+  height: rem(243);
+  padding-top: rem(40);
+  overflow: hidden;
+  border-radius: $base-border-radius;
+
+  &--work {
+    background-color: $light-red-work;
+
+    &::after {
+      content: url(assets/images/icon-work.svg);
+      position: absolute;
+      top: rem(-12);
+      right: rem(15);
+    }
+  }
+
+  &--play {
+    background-color: $soft-blue-play;
+
+    &::after {
+      content: url(assets/images/icon-play.svg);
+      position: absolute;
+      top: rem(-12);
+      right: rem(15);
+    }
+  }
+
+  &--study {
+    background-color: $light-red-study;
+
+    &::after {
+      content: url(assets/images/icon-study.svg);
+      position: absolute;
+      top: rem(-12);
+      right: rem(15);
+    }
+  }
+
+  &--exercise {
+    background-color: $lime-green-exercise;
+
+    &::after {
+      content: url(assets/images/icon-exercise.svg);
+      position: absolute;
+      top: rem(-2);
+      right: rem(15);
+    }
+  }
+
+  &--social {
+    background-color: $violet-social;
+
+    &::after {
+      content: url(assets/images/icon-social.svg);
+      position: absolute;
+      top: rem(-2);
+      right: rem(15);
+    }
+  }
+
+  &--self {
+    background-color: $soft-orange-selfcare;
+
+    &::after {
+      content: url(assets/images/icon-self-care.svg);
+      position: absolute;
+      top: rem(-12);
+      right: rem(15);
+    }
+  }
+
+  &__container {
+    position: relative;
+    background-color: $dark-blue;
+    cursor: pointer;
+    z-index: 1;
+    padding: rem(25) rem(30) rem(30) rem(30);
+    height: rem(300);
+    border-radius: $base-border-radius;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: lighten($dark-blue, 5%);
+      transform: translate(0, -50px);
+    }
+
+    .card__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h1 {
+        color: $white;
+        font-weight: 500;
+        text-transform: capitalize;
+        font-size: $base-font-size;
+      }
+
+      img {
+        // width: rem(18);
+        cursor: pointer;
+
+        &:hover {
+          color: red;
+        }
+      }
+    }
+
+    .card__info {
+      margin-top: rem(25);
+
+      h2 {
+        font-size: rem(55);
+        color: $white;
+        font-weight: 300;
+        margin-bottom: rem(5);
+      }
+
+      p {
+        color: $pale-blue;
+        font-size: rem(14);
+
+        span {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
 }

@@ -5,8 +5,9 @@ $utilities: (
   "font-weight": (
     "prefix": "fw",
     "values": (
+      "light": $font-weight-300,
       "regular": $font-weight-400,
-      "bold": $font-weight-700,
+      "medium": $font-weight-500,
     ),
   ),
 );

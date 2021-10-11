@@ -2,37 +2,45 @@
 
 // Colors
 // Primary
+$blue: #5847eb;
 
-$red: hsl(0, 78%, 62%);
-$cyan: hsl(180, 62%, 55%);
-$orange: hsl(34, 97%, 64%);
-$blue: hsl(212, 86%, 64%);
+// Card
+$light-red-work: #ff8c66;
+$soft-blue-play: #56c2e6;
+$light-red-study: #ff5c7c;
+$lime-green-exercise: #4acf81;
+$violet-social: #7536d3;
+$soft-orange-selfcare: #f1c65b;
 
 // Neutral
-$dark-blue: hsl(234, 12%, 34%);
-$gray-blue: hsl(229, 6%, 66%);
-$light-gray: hsl(0, 0%, 98%);
+$very-dark-blue: #0f1424;
+$dark-blue: #1c1f4a;
+$desaturated-blue: #6f76c8;
+$pale-blue: #bdc1ff;
+$white: #ffffff;
+$black: #000000;
 
 // Colors Pallete
 $colors: (
-  "red": $red,
-  "cyan": $cyan,
-  "orange": $orange,
   "blue": $blue,
+  "very-dark-blue": $very-dark-blue,
   "dark-blue": $dark-blue,
-  "gray-blue": $gray-blue,
-  "light-gray": $light-gray,
+  "desaturated-blue": $desaturated-blue,
+  "pale-blue": $pale-blue,
+  "white": $white,
+  "black": $black,
 );
 
 // Font size
-$base-font-size: rem(15) !default;
+$base-font-size: rem(18) !default;
 
 // Font Weight
-$font-weight-400: 400;
-$font-weight-700: 700;
+$font-weight-300: 300;
+$font-weight-400: 700;
+$font-weight-500: 500;
 
 // Border Radius
-$base-border-radius: rem(8) !default;
+$base-border-radius: rem(10) !default;
 
 // Box-Shadow
 $base-box-shadow: 0px 10px 25px rgba($blue, 0.1), 0px 10px 25px rgba($blue, 0.1);

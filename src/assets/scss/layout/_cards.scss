@@ -1,0 +1,11 @@
+@use "../utils" as *;
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: rem(800);
+  gap: rem(30);
+}
