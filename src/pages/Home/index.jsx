@@ -17,15 +17,7 @@ export default function Home() {
       <PeriodContext.Provider value={value}>
         <CardMenu data={profileData} />
 
-        {profileData.period.map((e, index) => {
-          if (period === "daily") {
-            return <Cards data={e.daily} key={`period-${index}`}/>;
-          } else if (period === "weekly") {
-            return <Cards data={e.weekly} key={`period-${index}`} />;
-          } else {
-            return <Cards data={e.monthly} key={`period-${index}`} />;
-          }
-        })}
+      <Cards />
       </PeriodContext.Provider>
     </main>
   );
