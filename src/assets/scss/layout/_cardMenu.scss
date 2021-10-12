@@ -83,6 +83,14 @@
       &.active {
         color: $white;
       }
+
+      button {
+        background: transparent;
+        border: none;
+        font-size: rem(18);
+        cursor: pointer;
+        font-family: $base-font;
+      }
     }
 
     &__list:not(:last-child) {
