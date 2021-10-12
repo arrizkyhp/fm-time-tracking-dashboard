@@ -24,7 +24,7 @@ export default function CardMenu({ data }) {
         <section className="cardMenu">
             <div className="cardMenu__profile">
             <img src={data.imageUrl} alt="profile" className="cardMenu__profile__image" />
-            <h1 className="cardMenu__profile__username"><span>Report for</span><br/> {data.firstname} <br/> {data.lastname}</h1>
+            <h1 className="cardMenu__profile__username"><span>Report for</span> {data.firstname} {data.lastname}</h1>
             </div>
             <ul className="cardMenu__period">
                 <li className={`cardMenu__period__list ${period === "daily" ? "active" : ""}`} onClick={handleDaily}>Daily</li>

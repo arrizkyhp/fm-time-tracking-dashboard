@@ -7,4 +7,15 @@ main {
   padding-bottom: rem(70);
   width: 100%;
   gap: rem(30);
+
+  @include breakpoint-max(md) {
+    flex-direction: column;
+    padding-top: rem(70);
+    padding-left: rem(30);
+    padding-right: rem(30);
+  }
+
+  @include breakpoint-max(sm) {
+    padding: rem(50) rem(25) rem(70) rem(25);
+  }
 }

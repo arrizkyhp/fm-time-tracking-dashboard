@@ -11,9 +11,9 @@ export default function Cards({ data }) {
 
   return (
     <section className="cards">
-      {periodData.map((e) => {
+      {periodData.map((e, index) => {
         // console.log(e.title);
-        return <Card title={e.title} timeframes={e.timeframes}/>
+        return <Card title={e.title} timeframes={e.timeframes} key={`card-${index}`}/>
       })}
 
     </section>

@@ -9,6 +9,15 @@
   overflow: hidden;
   border-radius: $base-border-radius;
 
+  @include breakpoint-max(md) {
+    max-width: rem(420);
+  }
+
+  @include breakpoint-max(sm) {
+    height: rem(145);
+    padding-top: rem(30);
+  }
+
   &--work {
     background-color: $light-red-work;
 
@@ -88,6 +97,10 @@
     &:hover {
       background-color: lighten($dark-blue, 5%);
       transform: translate(0, -50px);
+
+      @include breakpoint-max(sm) {
+        transform: translate(0, -35px);
+      }
     }
 
     .card__header {
@@ -105,21 +118,28 @@
       img {
         // width: rem(18);
         cursor: pointer;
-
-        &:hover {
-          color: red;
-        }
       }
     }
 
     .card__info {
       margin-top: rem(25);
 
+      @include breakpoint-max(sm) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: rem(8);
+      }
+
       h2 {
         font-size: rem(55);
         color: $white;
         font-weight: 300;
         margin-bottom: rem(5);
+
+        @include breakpoint-max(sm) {
+          font-size: rem(30);
+        }
       }
 
       p {
