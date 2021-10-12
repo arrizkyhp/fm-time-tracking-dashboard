@@ -174,7 +174,7 @@ body {
   transition: all 0.3s ease;
 }
 .card__container:hover {
-  background-color: #23275d;
+  background-color: #2a2f6f;
   -webkit-transform: translate(0, -50px);
           transform: translate(0, -50px);
 }
@@ -344,9 +344,9 @@ body {
   display: block;
 }
 .cardMenu__period {
-  padding-top: 2.15625rem;
+  padding-top: 1.875rem;
   padding-left: 1.875rem;
-  padding-bottom: 2.8125rem;
+  padding-bottom: 2.1875rem;
 }
 @media (max-width: 780px) {
   .cardMenu__period {

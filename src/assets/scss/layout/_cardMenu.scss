@@ -55,9 +55,9 @@
   }
 
   &__period {
-    padding-top: rem(34.5);
+    padding-top: rem(30);
     padding-left: rem(30);
-    padding-bottom: rem(45);
+    padding-bottom: rem(35);
 
     @include breakpoint-max(md) {
       display: flex;

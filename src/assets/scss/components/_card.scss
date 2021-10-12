@@ -95,7 +95,7 @@
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: lighten($dark-blue, 5%);
+      background-color: lighten($dark-blue, 10%);
       transform: translate(0, -50px);
 
       @include breakpoint-max(sm) {

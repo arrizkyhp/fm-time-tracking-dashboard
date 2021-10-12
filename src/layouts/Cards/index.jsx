@@ -1,13 +1,9 @@
-import { useContext } from "react";
-import { PeriodContext } from "pages/Home";
-
 import Card from "components/Card";
 import React from "react";
 
 import periodData from "json/data.json";
 
-export default function Cards({ data }) {
-  const { period, setPeriod } = useContext(PeriodContext);
+export default function Cards() {
 
   return (
     <section className="cards">
